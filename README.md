@@ -24,21 +24,16 @@ env\Scripts\activate
 pip install pyinstaller pillow pywin32
 ```
 
-2. Compile the Application (Release Build)
+### 2. Compile the Application (Release Build)
 Build the final executable using PyInstaller. The --noconsole flag hides the background command prompt, and --onefile packs all dependencies into a single binary. Ensure your version.txt is in the root directory:
-
-Bash
+```bash
 pyinstaller --noconsole --onefile --version-file=version.txt main.py
+```
 🚀 Usage
-
-Launch kishiMerger.exe.
-
-Drag and drop your images into the listbox or click Add Files.
-
+1. Launch kishiMerger.exe.
+2. Drag and drop your images into the listbox or click Add Files.
 (Optional but recommended) Rearrange the image order using Move Up or Move Down.
-
-Select the Direction and Resize base according to your needs.
-
-Click Merge Images to begin execution. The output will be saved to your selected output folder.
+3. Select the Direction and Resize base according to your needs.
+4. Click Merge Images to begin execution. The output will be saved to your selected output folder.
 
 👤 Author: kishikuun
