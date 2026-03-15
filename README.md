@@ -27,7 +27,7 @@ pip install pyinstaller pillow pywin32
 ### 2. Compile the Application (Release Build)
 Build the final executable using PyInstaller. The --noconsole flag hides the background command prompt, and --onefile packs all dependencies into a single binary. Ensure your version.txt is in the root directory:
 ```bash
-pyinstaller --noconsole --onefile --version-file=version.txt main.py
+pyinstaller --noconsole --onefile --version-file=version.txt --upx-dir . --exclude-module tkinter --exclude-module unittest --exclude-module email --exclude-module http --exclude-module pydoc --exclude-module xml main.py
 ```
 🚀 Usage
 1. Launch kishiMerger.exe.
